@@ -1,0 +1,280 @@
+body {
+  margin: 0;
+  background-color: #f4f6fa;
+  color: #1e2530;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.App {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 16px 48px;
+}
+
+/* Cabeçalho */
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f3a5f;
+  color: #ffffff;
+  padding: 16px 24px;
+  margin: 0 -16px 24px;
+  border-bottom: 4px solid #f28c28;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Botões */
+
+.botao {
+  display: inline-block;
+  background-color: #f28c28;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background-color: #d9771a;
+}
+
+.botao-secundario {
+  background-color: #e3e8f0;
+  color: #1f3a5f;
+}
+
+.botao-secundario:hover {
+  background-color: #d0d8e5;
+}
+
+.botao-perigo {
+  background-color: #c62828;
+}
+
+.botao-perigo:hover {
+  background-color: #a81f1f;
+}
+
+.acoes {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+/* Campos */
+
+.campo {
+  margin-bottom: 14px;
+}
+
+.campo label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+}
+
+.campo input,
+.campo select,
+.campo textarea,
+.busca {
+  width: 100%;
+  padding: 9px 10px;
+  border: 1px solid #c5ccd8;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #ffffff;
+}
+
+/* Tela inicial */
+
+.titulo-pagina {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.titulo-pagina h2 {
+  margin: 0;
+  color: #1f3a5f;
+}
+
+.busca {
+  margin-bottom: 14px;
+}
+
+.filtros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.lista-chamados {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card-chamado {
+  display: block;
+  background-color: #ffffff;
+  border: 1px solid #dde2ea;
+  border-left: 5px solid #f28c28;
+  border-radius: 8px;
+  padding: 14px 18px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-chamado:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.card-chamado h3 {
+  margin: 0;
+}
+
+.card-chamado p {
+  margin: 8px 0 0;
+  color: #5b6573;
+}
+
+.card-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Etiquetas de status e prioridade */
+
+.etiquetas {
+  display: flex;
+  gap: 6px;
+}
+
+.etiqueta {
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.status-aberto {
+  background-color: #e3f0fd;
+  color: #1565c0;
+}
+
+.status-em-andamento {
+  background-color: #fff1d6;
+  color: #8a5a00;
+}
+
+.status-resolvido {
+  background-color: #dff5e6;
+  color: #1b6e3a;
+}
+
+.prioridade {
+  background-color: #ececec;
+  color: #444444;
+}
+
+.prioridade-alta {
+  background-color: #fde7e5;
+  color: #b3261e;
+}
+
+/* Detalhe */
+
+.voltar {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #1f3a5f;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.detalhe,
+.formulario {
+  background-color: #ffffff;
+  border: 1px solid #dde2ea;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.detalhe h2 {
+  margin: 0;
+  color: #1f3a5f;
+}
+
+.etapa {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid #dde2ea;
+}
+
+.etapa h3 {
+  margin-top: 0;
+  color: #1f3a5f;
+}
+
+.confirmacao {
+  margin-top: 16px;
+  padding: 14px;
+  background-color: #fde7e5;
+  border: 1px solid #f3b8b3;
+  border-radius: 6px;
+}
+
+.confirmacao p {
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Formulário */
+
+.pagina-formulario h2 {
+  color: #1f3a5f;
+}
+
+/* Mensagens */
+
+.aviso {
+  text-align: center;
+  color: #5b6573;
+  padding: 32px 0;
+}
+
+.mensagem-erro {
+  background-color: #fde7e5;
+  border: 1px solid #f3b8b3;
+  color: #b3261e;
+  border-radius: 6px;
+  padding: 4px 14px;
+  margin-bottom: 16px;
+}
+
+.mensagem-sucesso {
+  background-color: #dff5e6;
+  border: 1px solid #a8dfb9;
+  color: #1b6e3a;
+  border-radius: 6px;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+}
