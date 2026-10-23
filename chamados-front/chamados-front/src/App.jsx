@@ -1,3 +1,4 @@
+// define as rotas e conecta cada endereço da pagina
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Cabecalho from "./components/Cabecalho";

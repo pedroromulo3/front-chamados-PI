@@ -1,4 +1,4 @@
-// Mostra o status e a prioridade de um chamado
+// Mostra as etiquetas de status e a prioridade de um chamado
 function Etiquetas(props) {
   const chamado = props.chamado;
 

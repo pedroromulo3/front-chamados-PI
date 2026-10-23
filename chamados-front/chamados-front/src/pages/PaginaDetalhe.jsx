@@ -1,3 +1,4 @@
+// mostra informações completas de um chamado. Permite iniciar o atendimento, resolver, editar ou excluir
 import { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import CampoTexto from "../components/CampoTexto";

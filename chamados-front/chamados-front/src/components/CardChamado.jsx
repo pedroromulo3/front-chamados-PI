@@ -1,3 +1,4 @@
+// mostra um resumo de cada chamado na lista 
 import { Link } from "react-router-dom";
 import Etiquetas from "./Etiquetas";
 

@@ -1,3 +1,4 @@
+// cria campos de seleção, como status, tipo e prioridade.
 function CampoSelecao(props) {
 
   function aoEscolher(evento) {

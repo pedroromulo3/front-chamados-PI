@@ -1,3 +1,4 @@
+// cria campos de texto, data e descrição
 function CampoTexto(props) {
 
   function aoDigitar(evento) {
